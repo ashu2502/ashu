@@ -1,0 +1,10 @@
+
+D
+java:S3740"/Provide the parametrized type for this generic.(¥ÿÿG
+f
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(µ´Ç‡
+A
+java:S3599",Use another way to initialize this instance.(¥ÿÿG
+n
+java:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(¥ÿÿG
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ñ†ë

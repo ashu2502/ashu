@@ -1,0 +1,101 @@
+// String = "heap" - all permutations of this string
+
+abc - abc,acb,bac,bca,cab,cba
+heap - heap,hepa,haep,hape,hpae,hpea,
+Eaph,eahp,epah,epha,ehpa,ehap,
+Aphe,apeh,ahpe,ahep,aehp,aeph,
+Phea,phae,peha
+
+2 substrings - print concatenation - swap & concat - print
+Heap - hea + p       - heap                         -                             phea
+            Hep + a      - hepa                          -                             ahep
+
+
+
+Parsing A Boolean Expression
+eg:
+input:"t"
+output:true
+
+input:"!(t)"
+output: false
+
+input:"&(t,f)"
+output:false
+
+input:"|(t,f)"
+output:true
+
+input:"&(t,|(f,!(f)))"
+Output: true
+
+public boolean evaluate(String expr);
+
+Construct boolean expression out of input
+Handle brackets
+
+!(&(t,f)) – f t & -
+
+boolean result;
+
+F t & - false && true - result = operand1 operator operand2
+
+&(t,|(f,!(f))) - f ! f I t &
+
+f ! - !false - true
+
+
+String exp = “&(t,f)”;
+Stack<Character> expStack = new Stack();
+
+// push characters one by one into stack
+for(char c : exp) {
+	if(c!=’ ’&& c!=’(’&& c!=’)’&& c!=’,’) {
+	expStack.push(c);
+}
+}
+
+while(!expStack.empty()) {
+	char operand = expStack.pop();
+	// store expStack peek in a character stackPeek
+	// if stackPeek is neither t nor f
+		// result = operate()
+	// else
+		// pop and get 2nd operand
+		// pop and get operator
+		// make call to operate with 3 params - result, operand2 and operator, and update result
+}
+	Return result;
+}
+
+Boolean operate(char operand, char operator) {
+	// if operator is not !, throw exception
+	// if operator is not, t -> false, f -> true
+}
+
+Boolean operate(char operand1, char operand2, char operator) {
+	Boolean res= (operand1==’t’) ?true:false;
+if(operator==’|’)
+	return result || operand2;
+	Else if(operator==’&’)
+		Return result&&operand2;
+
+}
+
+
+Chatbot
+List options
+Accept User input - string
+Provide response - string
+
+
+Time check : session to expire after X seconds, create new session if user input given
+
+
+Implementation
+HashMap to store input, feedback - ConcurrentHashMap for thread sync
+
+Components : User, Input, Response, Session
+User —-> Provides input —-> session created, and response fetched —--> Response displayed to user
+
+

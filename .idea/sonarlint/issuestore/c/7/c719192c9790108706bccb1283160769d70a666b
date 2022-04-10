@@ -1,0 +1,10 @@
+
+Q	java:S125
+"<This block of commented-out lines of code should be removed.(º¿ÓŸ
+G
+java:S5869"*Remove duplicates in this character class.(ğÌ›ß8´²ö/
+G
+java:S5869"*Remove duplicates in this character class.(ğÌ›ß8¼²ö/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ
+P
+java:S1144":Remove this unused private "getMatchNonMatchCount" method.(õ–Àû

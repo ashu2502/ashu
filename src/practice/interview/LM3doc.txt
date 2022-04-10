@@ -1,0 +1,29 @@
+// String str, String pat
+// Passed string should match the whole pattern
+
+// I/p: str = "AAA", pat = "A"  -- false
+// I/p: str = "AAA", pat = "A*" -- true
+// I/p: str = "ABCD", pat = ".*" -- true
+
+// if string does not contain *, compare
+
+
+
+// ((2+3)*5)/(5/7)*(10-5) -- // ((2+3)*5)/(5/7)*(10-5)
+// CharAndPosition
+
+// To validate brackets, use stack
+// [\d]+[\+\-\*\/][\d]+
+
+
+// HUB - 3 states - 5 regions
+// Sensors on conveyors - 3 conveyors for states
+
+// I/p - Code i/p from the sensors (libraries can decode this info)
+// O/p - Queue number
+
+// FixedThreadPool - failure logged in MQ (Apache Kafka)
+
+// Reader Service - Reads the code, calls third party APIs to decode and calls Service2 for generating queue number
+// QueueNumberProcessor Service - Calculate the queue number to send the consignment to, based on input coming from Reader Service and data fetched from QueueHandler Service
+// QueueHandler Service - communicates with the persistence layer, keeps track of the region and state queues
